@@ -13,4 +13,4 @@ const pool = new pg.Pool({
     // allowExitOnIdle: true 
 })
 
-module.exports = pool
+module.exports = pool;
