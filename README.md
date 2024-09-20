@@ -1,9 +1,9 @@
-# Project Name
+# Gallery
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+This is a gallery of a few pictures I like.
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+- The user can click on an item to toggle between seeing the image or it's description.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+- Clicking on an image's like button will add a like ot the image.
