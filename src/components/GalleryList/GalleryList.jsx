@@ -3,6 +3,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GalleryItem from './GalleryItem/GalleryItem.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './GalleryItem/GalleryItem.css';
 
 
 function GalleryList() {
@@ -21,7 +23,7 @@ function GalleryList() {
 
 
     return (
-        <div data-testid="galleryList">
+        <div data-testid="galleryList" id='galleryContainer'>
             {images.map((image) =>  <GalleryItem image={image} key={image.id} fetchGallery={fetchGallery}/>)}
         </div>
     )
