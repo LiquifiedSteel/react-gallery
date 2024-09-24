@@ -5,6 +5,7 @@ import axios from 'axios';
 import GalleryItem from './GalleryItem/GalleryItem.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './GalleryItem/GalleryItem.css';
+import { Container, Row } from "react-bootstrap";
 
 
 function GalleryList() {
@@ -23,9 +24,13 @@ function GalleryList() {
 
 
     return (
-        <div data-testid="galleryList" id='galleryContainer'>
-            {images.map((image) =>  <GalleryItem image={image} key={image.id} fetchGallery={fetchGallery}/>)}
-        </div>
+        <Container>
+            <div data-testid="galleryList" id='galleryContainer'>
+                <Row xs={1} lg={2}>
+                        {images.map((image) =>  <GalleryItem image={image} key={image.id} fetchGallery={fetchGallery}/>)}
+                </Row>
+            </div>
+        </Container>
     )
 }
 

@@ -3,7 +3,6 @@ import React from 'react';
 import GalleryList from '../GalleryList/GalleryList';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import About from '../About/About';
-import { Container } from "react-bootstrap";
 
 // Styles
 import './App.css';
