@@ -1,16 +1,19 @@
-const pg = require('pg')
+const pg = require('pg');
 
-let databaseName = 'react-gallery'
+if (process.env.DATABASE_URL) {
+  console.log(`Using cloud database config (DATABASE_URL found)`);
+  pool = new pg.Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false }
+  });
+} else {
+  console.log(`Using local database config (no DATABASE_URL found)`);
 
-if (process.env.NODE_ENV === 'test') {
-  databaseName = 'prime_testing'
-}
-
-const pool = new pg.Pool({
+  pool = new pg.Pool({
     host: 'localhost',
     port: 5432,
-    database: databaseName,
-    // allowExitOnIdle: true 
-})
+    database: 'react-gallery',
+  });
+}
 
 module.exports = pool;

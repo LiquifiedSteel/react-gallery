@@ -9,7 +9,8 @@ CREATE TABLE "gallery" (
 INSERT INTO "gallery" 
 ("url", "title", "description")
 VALUES
-('images/goat_small.jpg', 'Goat!', 'Photo of a goat taken at Glacier National Park.'),
 ('images/pikachu.png', 'Pikachu!', 'Picture of surprised Pikachu face.'),
-('images/Baller.webp', 'Baller!', 'Picture of Roblox Baller.');
+('images/Baller.webp', 'Baller!', 'Picture of Roblox Baller.'),
+('images/hiking.jpg', 'Hiking!', 'Picture of some idiot hiking in Zion National Park.'),
+('images/squirrel.webp', 'Squirrel!', 'Picture of a funny squirrel.');
   
